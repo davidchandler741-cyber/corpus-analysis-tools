@@ -12,16 +12,17 @@ analysis, and clean project organization.
 ## 📁 Project Structure
 
 review_nlp_tool/
+|
 │
-
+|
 ├── data_in/ # Input .txt review files
-
+|
 ├── data_out/ # Generated CSV outputs
-
+|
 ├── main.py # NLP pipeline entry point
-
+|
 ├── requirements.txt # Python dependencies
-
+|
 └── README.md
 
 
