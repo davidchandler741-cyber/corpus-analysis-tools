@@ -3,15 +3,7 @@ import re
 import pandas as pd
 import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-
-def clean_text(raw_text: str) -> str:
-    """Basic cleaner: lowercase, remove punctuation, normalize whitespace."""
-    lower = raw_text.lower()
-    no_punct = re.sub(r"[^\w\s]+", "", lower)
-    tokens = no_punct.split()
-    return " ".join(tokens)
-
+from preprocessing import clean_text
 
 def load_documents(input_folder: str):
     """Load raw + cleaned documents from .txt files (excluding CLEAN_ files)."""
