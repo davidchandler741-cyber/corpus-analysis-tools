@@ -67,7 +67,7 @@ The `clean_text` function accepts a dictionary of preprocessing options via the 
 ### Example Usage
 
 ```python
-from preprocess import clean_text
+from preprocessing import clean_text
 
 cleaned_text = clean_text(
     raw_text,
